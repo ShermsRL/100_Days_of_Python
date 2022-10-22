@@ -1,0 +1,83 @@
+# Import Statements
+import random
+
+# Constant Variables
+PLAYER_1 = "X"
+PLAYER_2 = "O"
+ALL_SQUARES = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# Functions
+def board(square, turn, all_squares, first, second):
+    if turn % 2 == 0:
+        all_squares[square-1] = second
+    else:
+        all_squares[square-1] = first
+
+    row_1 = all_squares[0:3]
+    row_2 = all_squares[3:6]
+    row_3 = all_squares[6:9]
+
+    print(*row_1, sep=" | ")
+    print("----------")
+    print(*row_2, sep=" | ")
+    print("----------")
+    print(*row_3, sep=" | ")
+
+
+def new_board():
+    row_1 = ALL_SQUARES[0:3]
+    row_2 = ALL_SQUARES[3:6]
+    row_3 = ALL_SQUARES[6:9]
+
+    print(*row_1, sep=" | ")
+    print("----------")
+    print(*row_2, sep=" | ")
+    print("----------")
+    print(*row_3, sep=" | ")
+
+
+def check_winner(board):
+    row_1 = board[0:3]
+    row_2 = board[3:6]
+    row_3 = board[6:9]
+    col_1 = board[0:7:3]
+    col_2 = board[1:8:3]
+    col_3 = board[2:9:3]
+    diag_1 = board[0:9:4]
+    diag_2 = board[2:8:2]
+    nested_list = [row_1, row_2, row_3, col_1, col_2, col_3, diag_1, diag_2]
+    for list in nested_list:
+        if list.count("X") == 3:
+            print("Player 1 wins")
+            return True
+        elif list.count("O") == 3:
+            print("Player 2 wins")
+            return True
+
+# The code
+print("Welcome to the Tic Tac Toe Game!")
+player_or_ai = input("Would you like to play against a player or AI?").lower()
+
+if player_or_ai == "player":
+    first_to_go = random.choice([PLAYER_1, PLAYER_2])
+    second_to_go = PLAYER_1 if first_to_go == PLAYER_2 else PLAYER_2
+    print(f"You will be playing against a player, {'PLAYER 1 (X)' if first_to_go == 'X' else 'PLAYER 2 (O)'} "
+          f"will go first.")
+
+    turn = 1
+    game_end = False
+    new_board()
+    while not game_end:
+        choice_of_square = int(input("Pick a square"))
+        board(choice_of_square, turn, ALL_SQUARES, first_to_go, second_to_go)
+        turn += 1
+
+        if turn > 0 and check_winner(ALL_SQUARES):
+            game_end = True
+        elif turn > 9:
+            print("Game Draw!")
+            game_end = True
+
+
+
