@@ -3,11 +3,12 @@ from replit import clear
 from art import logo
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-player_cards = []
-computer_cards = []
+
 
 #Start a game
 def start_game():
+    player_cards = []
+    computer_cards = []
     start = input(
         "Do you want to play a game of blackjack? Type 'y' to continue and 'n' to stop: "
     ).lower()
@@ -50,7 +51,8 @@ def start_game():
 def draw_card(deck):
     """Add a card to the selected deck"""
     if len(deck) == 0:
-      deck.append(random.choices(cards, k=2))
+      deck.append(random.choice(cards))
+      deck.append(random.choice(cards))
     else:
       deck.append(random.choice(cards))
 
@@ -81,8 +83,6 @@ def compare_winner(player, computer):
         print("You Win")
 
     print(f"Computer final cards: {computer}")
-    print (sum_of_user(player))
     start_game()
-
 
 start_game()
