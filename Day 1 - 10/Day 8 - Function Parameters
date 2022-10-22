@@ -1,0 +1,30 @@
+# Review: 
+# Create a function called greet(). 
+# Write 3 print statements inside the function.
+# Call the greet() function and run your code.
+
+# def greet():
+#   print ("Good morning!")
+#   print ("I bet your day will be amazing!")
+#   print ("Stay strong!")
+
+# greet()
+
+# def greet_with_name(name):
+#   print(f"Hello {name}")
+#   print(f"You can do it {name}")
+
+# greet_with_name("Sherman")
+
+def greet_with(name , location):
+  print(f"Hello {name}")
+  print(f"How are you doing at {location}?")
+
+#greet_with("Sherman", "Singapore") #Positional Argument, if u swap the pos the result will be diff
+
+#Keyword Argument 
+greet_with(location = "Singapore", name = "Sherman") 
+#Doesnt matter about the order as it is already tagged
+# name = Sherman
+#name is Parameter
+#Sherman = Argument
