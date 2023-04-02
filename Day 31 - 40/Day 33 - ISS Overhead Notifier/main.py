@@ -7,7 +7,7 @@ MY_LAT = 1.352083
 MY_LONG = 103.819839
 
 MY_EMAIL = "shermantaymkmk@gmail.com"
-MY_PASSWORD = "Shertayman1998"
+MY_PASSWORD = "fakepassword"
 
 response = requests.get(url="http://api.open-notify.org/iss-now.json")
 response.raise_for_status()
