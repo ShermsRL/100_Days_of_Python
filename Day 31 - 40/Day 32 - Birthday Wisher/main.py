@@ -15,7 +15,7 @@ import datetime as dt
 
 # My email and password
 my_email = "shermantaymkmk@gmail.com"
-my_password = "Shertayman1998"
+my_password = "fakepassword"
 
 # reading the today date time
 current_day = dt.datetime.now()
