@@ -4,7 +4,7 @@ import requests
 import smtplib
 
 gmail_email = "shermantaymkmk@gmail.com"
-gmail_password = "qgohxceqbiwzbafb"
+gmail_password = "-"
 PRODUCT_LINK = "https://www.amazon.com/dp/B0863TXGM3?tag=camelproducts-20&linkCode=ogi&th=1&language=en_US"
 TARGET_PRICE = 250.0
 
