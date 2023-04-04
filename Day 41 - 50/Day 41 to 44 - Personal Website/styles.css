@@ -1,0 +1,132 @@
+div{
+    background-color: #53BF9D;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #F94C66;
+    line-height: 2;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #F94C66;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #BD4291;
+
+}
+
+.hrr{
+    border-style: dotted;
+    width: 8%;
+    border-width: 8px 0 0 0;
+    margin-top: 50px
+}
+
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+.top-container{
+    background-color: #53BF9D;
+    position: relative;
+    padding-top: 50px;
+
+}
+
+.middle-container{
+
+
+
+}
+
+.bottom-container{
+    padding: 50px;
+    background-color: #BD4291;
+    word-spacing: 30px;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+.bottom-cloud{
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+}
+
+.top-cloud{
+    right: 300px;
+    top: 50px;
+    position: absolute;
+}
+
+a{
+    color: #BD4291;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code-gif{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.read-gif{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.btn {
+  background: #53BF9D;
+  background-image: -webkit-linear-gradient(top, #53BF9D, #2980b9);
+  background-image: -moz-linear-gradient(top, #53BF9D, #2980b9);
+  background-image: -ms-linear-gradient(top, #53BF9D, #2980b9);
+  background-image: -o-linear-gradient(top, #53BF9D, #2980b9);
+  background-image: linear-gradient(to bottom, #53BF9D, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #FFC54D;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.contact-me{
+    padding: 20px;
+
+}
+
+.footer-link{
+    color: black;
+}
